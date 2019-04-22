@@ -1,5 +1,5 @@
 <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
   <div class="example-box" *ngFor="let widget of widgetTypes" cdkDrag>
-    <app-widget [type]="widget"></app-widget>
+    <app-widget [type]="widget" style="margin: 0 auto;"></app-widget>
   </div>
 </div>
