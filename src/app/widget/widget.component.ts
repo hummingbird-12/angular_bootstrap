@@ -41,7 +41,6 @@ export class WidgetComponent implements OnInit, OnChanges, AfterViewInit, OnDest
     const factory = this.componentFactoryResolver.resolveComponentFactory(this.type);
     this.cmpRef = this.widgetWrap.createComponent(factory);
 
-    console.log(this.widgetTitle);
     this.widgetTitle.nativeElement.textContent = this.cmpRef.instance.title;
 
     this.cdRef.detectChanges();
