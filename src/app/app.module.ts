@@ -7,20 +7,33 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { AppComponent } from './app.component';
 import { WidgetComponent } from './widget/widget.component';
 import { DragDropListComponent } from './drag-drop-list/drag-drop-list.component';
+import { AlertComponent } from './alert/alert.component';
+import { FormsModule } from '@angular/forms';
+import { BadgeComponent } from './badge/badge.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WidgetComponent,
-    DragDropListComponent
+    DragDropListComponent,
+    AlertComponent,
+    BadgeComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
+  entryComponents: [
+    AlertComponent,
+    BadgeComponent,
+    BreadcrumbComponent,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
