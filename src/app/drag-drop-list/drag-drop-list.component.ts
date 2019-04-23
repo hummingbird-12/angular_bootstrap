@@ -49,7 +49,7 @@ export class DragDropListComponent implements OnInit {
     JumbotronComponent,
     ListGroupComponent,
     MediaComponent,
-    ModalComponent,
+    // ModalComponent,
     NavsComponent,
     // NavbarComponent,
     PaginationComponent,
